@@ -1,6 +1,6 @@
-//package transport;
+package transport;
 //
-//public class Bus extends Transport{
+public class Bus extends Transport{
 //
 //
 //    @Override
@@ -13,7 +13,32 @@
 //
 //    }
 //
-//    public Bus(String brand, String model, Integer productionYear, String productionCountry, String color, String typeOfFuel) {
-//        super(brand, model, productionYear, productionCountry, color, typeOfFuel);
-//    }
-//}
+    public Bus(String brand,
+               String model,
+                int engineCapasity)
+//               Integer productionYear,
+//               String productionCountry,
+//               String color,
+//               String typeOfFuel)
+    {
+        super(brand,
+               model,
+//              productionYear,
+                engineCapasity);
+
+//                productionCountry,
+//                color,
+//                typeOfFuel);
+}
+
+    @Override
+    public void startMovement() {
+        super.startMovement();
+    }
+
+    @Override
+    public void stopMovement() {
+        super.stopMovement();
+    }
+}
+

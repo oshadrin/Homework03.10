@@ -11,9 +11,31 @@
 //import java.time.LocalDate;
 //import java.util.Date;
 
+import transport.Bus;
+import transport.PassengerCar;
+import transport.Truck;
+
 public class Main {
 
     public static void main(String[] args) {
+
+
+        Bus huge = new Bus("Man", "1212", 220);
+        Bus big = new Bus("Scania", "X13", 200);
+        Bus middle = new Bus("Mercedes", "GLS", 180);
+        Bus small = new Bus("Ford", "DNN12", 150);
+
+        Truck one = new Truck("Volvo", "AM21", 350);
+        Truck two = new Truck("Volvo", "AS33", 366);
+        Truck three = new Truck("Mercedes", "GLR", 468);
+        Truck four = new Truck("Kamaz", "1144", 420);
+
+        PassengerCar black = new PassengerCar("Ford", "Focus", 120);
+        PassengerCar red = new PassengerCar("MiniCooper", "S", 280);
+        PassengerCar white = new PassengerCar("Mazda", "CX", 290);
+        PassengerCar silver = new PassengerCar("Lada", "Largus", 98);
+
+
 
 //        Flower[] arr = new Flower[4];
 //        Flower rose = new Flower("Роза обыкновенная", null, "Голландия", 35.59, 0);
