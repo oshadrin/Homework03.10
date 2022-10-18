@@ -1,6 +1,6 @@
 package transport;
 //
-public class Bus extends Transport{
+public class Bus extends Transport implements Abusers{
 //
 //
 //    @Override
@@ -33,12 +33,32 @@ public class Bus extends Transport{
 
     @Override
     public void startMovement() {
-        super.startMovement();
+        System.out.println("Начало движения автобуса");
     }
 
     @Override
     public void stopMovement() {
-        super.stopMovement();
+        System.out.println("Остановка автобуса");
+    }
+
+    @Override
+    public void pitStop() {
+        System.out.println("Въезд на пит-стоп (автобус)");
+    }
+
+    @Override
+    public void bestTimeOfCircle() {
+        System.out.println("Лучшее время круга (автобус)");
+    }
+
+    @Override
+    public void maxSpeed() {
+        System.out.println("Максимальная скорость (легковой)");
+    }
+
+    @Override
+    public String toString() {
+        return getBrand() + " " + getModel() + " " + getEngineCapasity();
     }
 }
 

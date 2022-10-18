@@ -1,6 +1,8 @@
 package transport;
 
-public class PassengerCar extends Transport {
+import java.util.SortedMap;
+
+public class PassengerCar extends Transport implements Abusers {
 
     public PassengerCar(String brand, String model, int engineCapasity) {
         super(brand, model, engineCapasity);
@@ -8,11 +10,31 @@ public class PassengerCar extends Transport {
 
     @Override
     public void startMovement() {
-        super.startMovement();
+        System.out.println("Начало движения легкового автомобиля");
     }
 
     @Override
     public void stopMovement() {
-        super.stopMovement();
+        System.out.println("Остановка легкового автомобиля");
+    }
+
+    @Override
+    public void pitStop() {
+        System.out.println("Въезд на пит-стоп (легковой)");
+    }
+
+    @Override
+    public void bestTimeOfCircle() {
+        System.out.println("Лучшее время круга (легковой)");
+    }
+
+    @Override
+    public void maxSpeed() {
+        System.out.println("Максимальная скорость (легковой)");
+    }
+
+    @Override
+    public String toString() {
+        return getBrand() + " " + getModel() + " " + getEngineCapasity();
     }
 }

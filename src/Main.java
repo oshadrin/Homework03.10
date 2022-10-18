@@ -19,23 +19,42 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        Bus[] bus = new Bus[4];
         Bus huge = new Bus("Man", "1212", 220);
         Bus big = new Bus("Scania", "X13", 200);
         Bus middle = new Bus("Mercedes", "GLS", 180);
         Bus small = new Bus("Ford", "DNN12", 150);
+        bus[0] = huge;
+        bus[1] = big;
+        bus[2] = middle;
+        bus[3] = small;
 
+        Truck[] truck = new Truck[4];
         Truck one = new Truck("Volvo", "AM21", 350);
         Truck two = new Truck("Volvo", "AS33", 366);
         Truck three = new Truck("Mercedes", "GLR", 468);
         Truck four = new Truck("Kamaz", "1144", 420);
+        truck[0] = one;
+        truck[1] = two;
+        truck[2] = three;
+        truck[3] = four;
 
+        PassengerCar[] passengerCar = new PassengerCar[4];
         PassengerCar black = new PassengerCar("Ford", "Focus", 120);
         PassengerCar red = new PassengerCar("MiniCooper", "S", 280);
         PassengerCar white = new PassengerCar("Mazda", "CX", 290);
         PassengerCar silver = new PassengerCar("Lada", "Largus", 98);
+        passengerCar[0] = black;
+        passengerCar[1] = red;
+        passengerCar[2] = white;
+        passengerCar[3] = silver;
 
 
+        four.pitStop();
+        white.bestTimeOfCircle();
+        small.maxSpeed();
+
+        printTransport(bus, truck, passengerCar);
 
 //        Flower[] arr = new Flower[4];
 //        Flower rose = new Flower("Роза обыкновенная", null, "Голландия", 35.59, 0);
@@ -159,5 +178,17 @@ public class Main {
 //                composition += "Срок годности " + lifeSpan + " дней";
 //                System.out.println(composition);
 //            }
+
+    public static void printTransport(Bus[] bus, Truck[] track, PassengerCar[] passengerCars) {
+        for (int i = 0; i < bus.length; i++) {
+            System.out.println(bus[i]);
+        }
+        for (int i = 0; i < track.length; i++) {
+            System.out.println(track[i]);
+        }
+        for (int i = 0; i < track.length; i++) {
+            System.out.println(track[i]);
+        }
+    }
 //
 }

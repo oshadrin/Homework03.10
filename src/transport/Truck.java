@@ -1,6 +1,6 @@
 package transport;
 
-public class Truck extends Transport {
+public class Truck extends Transport implements Abusers {
 
     public Truck(String brand, String model, int engineCapasity) {
         super(brand, model, engineCapasity);
@@ -8,11 +8,32 @@ public class Truck extends Transport {
 
     @Override
     public void startMovement() {
-        super.startMovement();
+        System.out.println("Начало движения грузовика");
     }
 
     @Override
     public void stopMovement() {
-        super.stopMovement();
+        System.out.println("Остановка грузовика");
+    }
+
+    @Override
+    public void pitStop() {
+        System.out.println("Въезд на пит-стоп (грузовик)");
+    }
+
+    @Override
+    public void bestTimeOfCircle() {
+        System.out.println("Лучшее время круга (грузовик)");
+    }
+
+    @Override
+    public void maxSpeed() {
+        System.out.println("Максимальная скорость (грузовик)");
+    }
+
+    @Override
+    public String toString() {
+        return getBrand() + " " + getModel() + " " + getEngineCapasity();
     }
 }
+
