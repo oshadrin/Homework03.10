@@ -11,8 +11,13 @@
 //import java.time.LocalDate;
 //import java.util.Date;
 
+import drivers.CategoryB;
+import drivers.CategoryC;
+import drivers.CategoryD;
+import drivers.Driver;
 import transport.Bus;
 import transport.PassengerCar;
+import transport.Transport;
 import transport.Truck;
 
 public class Main {
@@ -55,6 +60,14 @@ public class Main {
         small.maxSpeed();
 
         printTransport(bus, truck, passengerCar);
+
+        CategoryB ivan = new CategoryB("Ivanov Ivan Ivanovich", "B", 12, black);
+        CategoryC petr = new CategoryC("Petrov Petr Petrovich", "C", 22, four);
+        CategoryD alex = new CategoryD("Alekseev Aleksey Alexeevich", "D", 14, middle);
+
+        ivan.drive();
+
+
 
 //        Flower[] arr = new Flower[4];
 //        Flower rose = new Flower("Роза обыкновенная", null, "Голландия", 35.59, 0);
