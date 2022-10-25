@@ -1,6 +1,6 @@
 package transport;
 //
-public class Bus extends Transport implements Abusers{
+public class Bus extends Transport{
 //
 //
 //    @Override

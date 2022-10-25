@@ -1,6 +1,6 @@
 package transport;
 
-public class Truck extends Transport implements Abusers {
+public class Truck extends Transport {
 
     public Truck(String brand, String model, int engineCapasity) {
         super(brand, model, engineCapasity);

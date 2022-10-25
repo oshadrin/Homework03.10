@@ -1,6 +1,6 @@
 package transport;
 
-public abstract class Transport {
+public abstract class Transport implements Abusers {
     private String brand;
     private String model;
 
@@ -23,8 +23,17 @@ public abstract class Transport {
 //            String typeOfFuel
             int engineCapasity
     ) {
-        this.brand = brand;
-        this.model = model;
+                if (brand.isBlank()) {
+                    System.out.println("поле не должно быть пустым");
+        } else {
+                    this.brand = brand;
+                }
+        if (model.isBlank()) {
+            System.out.println("поле не должно быть пустым");
+        } else {
+            this.model = model;
+        }
+
         this.engineCapasity = engineCapasity;
 
 //        this.productionYear = productionYear;
@@ -33,13 +42,9 @@ public abstract class Transport {
 //        this.typeOfFuel = typeOfFuel;
     }
 
-    public void startMovement() {
+    public abstract void startMovement();
 
-    }
-
-    public void stopMovement() {
-
-    }
+    public abstract void stopMovement();
 
 
 

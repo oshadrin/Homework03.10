@@ -8,18 +8,5 @@ public class CategoryC extends Driver<Truck>{
         super(fullName, license, experience, car);
     }
 
-    @Override
-    public void start() {
-        super.start();
-    }
 
-    @Override
-    public void stop() {
-        super.stop();
-    }
-
-    @Override
-    public void fillUp() {
-        super.fillUp();
-    }
 }
