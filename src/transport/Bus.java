@@ -1,6 +1,6 @@
-//package transport;
+package transport;
 //
-//public class Bus extends Transport{
+public class Bus extends Transport{
 //
 //
 //    @Override
@@ -13,7 +13,52 @@
 //
 //    }
 //
-//    public Bus(String brand, String model, Integer productionYear, String productionCountry, String color, String typeOfFuel) {
-//        super(brand, model, productionYear, productionCountry, color, typeOfFuel);
-//    }
-//}
+    public Bus(String brand,
+               String model,
+                int engineCapasity)
+//               Integer productionYear,
+//               String productionCountry,
+//               String color,
+//               String typeOfFuel)
+    {
+        super(brand,
+               model,
+//              productionYear,
+                engineCapasity);
+
+//                productionCountry,
+//                color,
+//                typeOfFuel);
+}
+
+    @Override
+    public void startMovement() {
+        System.out.println("Начало движения автобуса");
+    }
+
+    @Override
+    public void stopMovement() {
+        System.out.println("Остановка автобуса");
+    }
+
+    @Override
+    public void pitStop() {
+        System.out.println("Въезд на пит-стоп (автобус)");
+    }
+
+    @Override
+    public void bestTimeOfCircle() {
+        System.out.println("Лучшее время круга (автобус)");
+    }
+
+    @Override
+    public void maxSpeed() {
+        System.out.println("Максимальная скорость (легковой)");
+    }
+
+    @Override
+    public String toString() {
+        return getBrand() + " " + getModel() + " " + getEngineCapasity();
+    }
+}
+

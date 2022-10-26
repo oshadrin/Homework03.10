@@ -9,7 +9,7 @@
 //    public Flower(String name, String flowerColor, String country, double cost, int lifeSpan) {
 //        this.name = name;
 //
-//        if (flowerColor == null || !flowerColor.isEmpty() || !flowerColor.isBlank() ) {
+//        if (!flowerColor.isBlank() ) {
 //            flowerColor = "Белый";
 //        }
 //        this.flowerColor = flowerColor;
